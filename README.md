@@ -1,5 +1,4 @@
-XspeedIt
-========
+# XspeedIt
 
 XspeedIt est une société d'import / export ayant robotisé toute sa chaîne d'emballage de colis.  
 Elle souhaite trouver un algorithme permettant à ses robots d'optimiser le nombre de cartons d'emballage utilisés.
@@ -33,3 +32,28 @@ Articles      : 163841689525773
 Robot actuel  : 163/8/41/6/8/9/52/5/7/73 => 10 cartons utilisés  
 Robot optimisé: 163/82/46/19/8/55/73/7   => 8  cartons utilisés
 ```
+
+## Technology
+
+ - Java 1.7
+ - JUnit
+ - Apache Log4j 
+ - Apache Commons (Lang, Configuration)
+ - Maven
+
+
+## Quickstart
+
+Just execute the Maven command:
+```sh
+mvn clean package exec:java -X -Dexec.mainClass="com.exercise.xspeedit.Main" -Dexec.args="163841689525773"
+```
+
+## Configuration
+
+Boxes size and robot type (basic/advanced) can be changed inside:
+```sh
+src\main\resources\config.properties
+```
+
+
