@@ -46,7 +46,7 @@ Robot optimisé: 163/82/46/19/8/55/73/7   => 8  cartons utilisés
 
 Just execute the Maven command:
 ```sh
-mvn clean package exec:java -X -Dexec.mainClass="com.exercise.xspeedit.Main" -Dexec.args="163841689525773"
+mvn clean package exec:java -Dexec.mainClass="com.exercise.xspeedit.Main" -Dexec.args="163841689525773"
 ```
 
 ## Configuration
